@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url("photo_2023-11-26_15-38-59.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#color-picker {
+
+    margin-top: 100px;
+}
+
+#mixed-color {
+    border-radius: 10px;
+    margin-top: 31px;
+    display: inline-block;
+    margin-left: 40px;
+    border-radius: 50%;
+}

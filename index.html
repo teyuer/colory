@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смешивание цветов</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        body {
+            background-image: url(photo_2023-11-26_15-38-59.jpg);
+            background-size: cover;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-image: url("images.jpg");
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            #color-picker {
+                flex-direction: column;
+            }
+
+            #color-picker input, #color-picker button {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<script> var colors = ["blue", "red", "green", "yellow", "purple"]; var i = 0; setInterval(function(){ document.querySelector("h1").style.color = colors[i]; i++; if(i >= colors.length){ i = 0; } }, 3000); </script>
+
+<h1  style="margin-top: 105px;margin-left: 20px; color: #ff7800 ;font-size: 40px!important;">Смешивание цветов</h1>
+
+<div id="color-picker">
+    <label for="color1"></label><input style="height: 50px ; width: 50px " type="color" id="color1" value="#ff0000">
+    <input style="width: 50px; height: 50px " type="color" id="color2" value="#00ff00">
+    <button style="background-color: gold; border: 1px solid red; border-radius: 10px; height: 25px" id="mix">Смешать</button>
+</div>
+
+<div id="mixed-color" style="width: 100px; height: 100px;"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
